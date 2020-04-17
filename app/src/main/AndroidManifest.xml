@@ -28,6 +28,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.neighbour_list.PageDetailVoisinActivity"
+            android:label="PageDetailVoisinActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.neighbour_list.ListNeighbourActivity" />
+        </activity>
     </application>
 
 </manifest>
