@@ -1,11 +1,11 @@
 package com.openclassrooms.entrevoisins.ui.neighbour_list;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.openclassrooms.entrevoisins.R;
 import com.openclassrooms.entrevoisins.model.Neighbour;
@@ -37,11 +37,11 @@ public class PageDetailVoisinActivity extends AppCompatActivity {
 
         detailBackdropView = findViewById(R.id.detailBackdrop);
         //remplissage de la vue selectionnee avec la bonne data provenant de l'objet
-        detailBackdropView.setImageDrawable(selectedObject.getAvatarUrl()); //icon
+        //detailBackdropView.setImageDrawable(selectedObject.getAvatarUrl()); //icon
 
         detailImageView = findViewById(R.id.detailImage);
         //remplissage de la vue selectionnee avec la bonne data provenant de l'objet
-        detailImageView.setImageDrawable(selectedObject.getAvatarUrl());
+        //detailImageView.setImageDrawable(selectedObject.getAvatarUrl());
 
         detailTextView1 = findViewById(R.id.detailText1);
         detailTextView1.setText(selectedObject.getName());
@@ -63,8 +63,6 @@ public class PageDetailVoisinActivity extends AppCompatActivity {
 
         detailTextView5 = findViewById(R.id.detailText5);
         detailTextView5.setText(selectedObject.getAboutMe()); //text
-
-
 
     }
 }

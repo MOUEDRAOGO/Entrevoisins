@@ -82,7 +82,7 @@ public class Neighbour implements Parcelable {
         this.name = name;
     }
 
-    public Drawable getAvatarUrl() {
+    public String getAvatarUrl() {
         return avatarUrl;
     }
 
